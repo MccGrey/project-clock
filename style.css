@@ -4,3 +4,56 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+.day {
+  background-image: url(./assets/bon_jour.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+}
+.container {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.clock_container {
+  margin-bottom: 7rem;
+}
+
+p {
+  width: 55%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  word-spacing: 0.6rem;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+}
+
+.greetings {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  word-spacing: 0.6rem;
+  letter-spacing: 0.25rem;
+  margin-bottom: 0;
+}
+
+.time {
+  font-family: "Poppins", sans-serif;
+  font-size: 9rem;
+  font-weight: 800;
+}
+
+.time .period {
+  font-size: 2rem;
+  font-weight: 300;
+}
