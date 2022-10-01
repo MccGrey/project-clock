@@ -3,15 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  color: white;
 }
-
-.day {
-  background-image: url(./assets/bon_jour.jpg);
-  -webkit-background-size: cover;
+body {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  height: 100%;
 }
 .container {
   position: absolute;
