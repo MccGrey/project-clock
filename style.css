@@ -6,22 +6,32 @@
   color: white;
 }
 body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 10%;
   z-index: 2;
   width: 80%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .clock_container {
   margin-bottom: 7rem;
 }
 
+.nugget {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
 p {
   width: 55%;
   font-size: 1rem;
@@ -40,7 +50,7 @@ h4 {
   font-family: "Poppins", sans-serif;
   word-spacing: 0.6rem;
   letter-spacing: 0.25rem;
-  margin-bottom: 0;
+  margin-bottom: -2rem;
 }
 
 .time {
@@ -52,15 +62,101 @@ h4 {
 .time .period {
   font-size: 2rem;
   font-weight: 300;
+  margin-left: -1rem;
 }
 
 select {
   color: black;
-  width: 100px;
+  width: 120px;
   height: 40px;
   border-radius: 30px;
   border: none;
+  font-weight: 700;
 }
 option {
   color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+}
+/*====================================RESPONSIVENESS FOR TABLETS =========================================*/
+@media screen and (max-width: 1024px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+  }
+
+  p {
+    width: 55%;
+    font-size: 1rem;
+  }
+
+  .time {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  .greetings {
+    word-spacing: 0.4rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: -0.5rem;
+  }
+}
+
+/* ==============================RESPONSIVENESS FOR PHONES====================================*/
+@media screen and (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    position: absolute;
+    top: 16%;
+    left: 5%;
+    width: 90%;
+  }
+
+  .nugget > p {
+    width: 100%;
+    font-size: 0.5rem;
+    line-height: 0.8rem;
+  }
+
+  .greetings {
+    word-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .clock_container {
+    margin-bottom: 15rem;
+  }
+
+  select {
+    width: 80px;
+    height: 30px;
+  }
+
+  option {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+
+  .time .period {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-left: -1rem;
+  }
 }
