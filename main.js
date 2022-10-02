@@ -1,6 +1,6 @@
 function displayTime() {
   var dateTime = new Date();
-  var hrs = dateTime.getHours();
+  var hrs = dateTime.getHours() + 5;
   var min = dateTime.getMinutes();
 
   if (hrs > 12) {
