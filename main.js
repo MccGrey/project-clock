@@ -19,12 +19,17 @@ function displayTime() {
   }
 
   if (hrs < 12) {
-    greet = "☀  good morning";
+    greet = "☀ good morning";
     document.body.style.backgroundImage = " url(./assets/bonjour.jpg)";
   }
 
-  if (hrs >= 12 && hrs <= 24) {
-    greet = "🌙  good evening";
+  if (hrs >= 12 && hrs < 18) {
+    greet = "🔅 good afternoon";
+    document.body.style.backgroundImage = "url(./assets/noon.jpg)";
+  }
+
+  if (hrs >= 18 && hrs <= 24) {
+    greet = "🌙 good evening";
     document.body.style.backgroundImage = "url(./assets/buena_noches.jpg)";
   }
 
