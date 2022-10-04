@@ -6,7 +6,7 @@ This project is a simple webpage that tells the time. it switches backgrounds dy
 - How to use fetch API to dynamically request for a resource
 - How to apply styling with javascript
 - Basic usage of the conditional statement (IF and ELSE)
-- How to make your project responsive to all devices
+- How to make a webpage responsive to all devices
 - Naming classes and ids the right way
 - Importing cdns'
 - How to comment your code for easy readability
