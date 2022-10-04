@@ -1,6 +1,17 @@
+const quote = document.getElementById("quote");
+const author = document.getElementById("quote_author");
+
+//---------------FOR RANDOM QUOTES
+fetch("https://api.quotable.io/random")
+  .then((response) => response.json())
+  .then((data) => {
+    quote.innerHTML = '"' + data.content + '"';
+    author.innerHTML = "-" + data.author;
+  });
+
 function displayTime() {
   var dateTime = new Date();
-  var hrs = dateTime.getHours() + 5;
+  var hrs = dateTime.getHours();
   var min = dateTime.getMinutes();
 
   if (hrs > 12) {
